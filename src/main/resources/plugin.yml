@@ -1,0 +1,44 @@
+name: MorniSommerspiele
+version: '${project.version}'
+main: de.moinmorni.sommerspiele.SommerspielePlugin
+api-version: '1.21'
+description: Sommerspiele für das MoinMorni-Netzwerk – Almlauf, Bogenschießen, Ruderregatta und Seifenkiste mit Medaillen, 2 bis 12 Leute.
+authors: [MoinMorni]
+website: https://moinmorni.net
+# Läuft mit dem Netzwerk-Plugin (Sprache, Party, Statistik) und auch allein.
+softdepend: [MoinMorni]
+
+commands:
+  sommeradmin:
+    description: Verwaltung (info, status, start, stopp, neubauen, neuladen, testdatum; fahren/laufen/schiessen/wind nur zum Testen)
+    usage: /sommeradmin <info|status|start [wettkampf|almlauf|bogen|regatta|seifenkiste]|stopp|neubauen|neuladen|testdatum <datum|aus>>
+    permission: moinmorni.sommerspiele.admin
+  abstimmen:
+    description: Abstimmen, was als Nächstes kommt (Wettkampf oder eine Disziplin)
+    usage: /abstimmen [wettkampf|almlauf|bogen|regatta|seifenkiste]
+    aliases: [vote, wahl]
+  bereit:
+    description: Im Dorf bereit melden
+    usage: /bereit
+    aliases: [ready]
+  zuschauen:
+    description: Dem laufenden Wettkampf zuschauen
+    usage: /zuschauen
+    aliases: [spectate, spec]
+  verlassen:
+    description: Wettkampf oder Zuschauen verlassen (zurück ins Dorf)
+    usage: /verlassen
+    aliases: [leave]
+  stats:
+    description: Medaillen und Bestwerte ansehen
+    usage: /stats [spieler]
+    aliases: [statistik, medaillen]
+  top:
+    description: Bestwerte je Disziplin
+    usage: /top [almlauf|bogen|regatta|seifenkiste]
+    aliases: [bestenliste, leaderboard]
+
+permissions:
+  moinmorni.sommerspiele.admin:
+    description: Sommerspiele verwalten und im Kreativmodus in der Sommerwelt bauen
+    default: op

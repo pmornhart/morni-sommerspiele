@@ -1,0 +1,11 @@
+# Bau-Ausgaben
+target/
+# Test-Server (liegen außerhalb, falls doch einer hier landet)
+test/server/
+sommerspiele-test*/
+*.log
+# Werkzeuge
+.idea/
+*.iml
+.vscode/
+node_modules/

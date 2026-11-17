@@ -1,0 +1,68 @@
+# Morni Sommerspiele – Einstellungen. Nach Änderungen: /sommeradmin neuladen (oder Server neu starten).
+
+# Zurück ins Spiel: Verliert jemand mitten im Wettkampf die Verbindung (zum Beispiel, weil das Spiel abstürzt), bleibt
+# sein Platz so viele Sekunden frei – Disziplin, Lauf und Wertung. Kommt er rechtzeitig wieder (direkt oder über
+# „Zurück ins Spiel“ in der Lobby), geht es genau dort weiter, wo er war; die Uhr seines Laufs läuft so lange weiter.
+# Sonst hat er den Wettkampf verlassen. 0 = aus (0–600).
+rueckkehr-sekunden: 90
+
+# Eigene leere Welt für das Sommerdorf und alle Strecken (wird beim ersten Start angelegt und gebaut).
+welt: sommerspiele
+
+# Saison: „sommer“ = nur von saison-von bis saison-bis (Monate, jeweils ganz), „immer“ = das ganze Jahr offen.
+# Vorgabe April bis November: genau dann, wenn Wintersport (1. Dezember bis 31. März) Pause hat – so ist immer einer der
+# beiden Modi offen. Außerhalb der Saison bleibt das Dorf zum Anschauen offen, Wettkämpfe gibt es keine; das Netzwerk
+# sieht „geschlossen“ (Winterpause).
+saison: sommer
+saison-von: 4
+saison-bis: 11
+
+# Licht: „tag“ (Mittag, hell) oder „abend“ (Sonnenuntergang, die Laternen leuchten).
+tageszeit: tag
+
+# Blütenstaub schwebt leise um jeden Spieler (nur Anzeige).
+bluetenstaub: true
+
+dorf:
+  # So lange läuft der Countdown im Dorf, bevor ein Wettkampf startet. Sagen alle „bereit“, geht es nach 5 Sekunden los.
+  countdown-sekunden: 30
+  # Ab so vielen Leuten im Dorf beginnt der Countdown von selbst (sonst, sobald jemand „bereit“ ist).
+  mindestens-spieler: 2
+
+wettkampf:
+  # Höchstens so viele Leute in einem Wettkampf (1–12). Partys bleiben zusammen.
+  hoechstens-spieler: 12
+  # Pause zwischen zwei Disziplinen (Zwischenstand).
+  pause-sekunden: 8
+  # So lange dauert die Siegerehrung am Treppchen, danach geht es zurück ins Dorf.
+  siegerehrung-sekunden: 12
+
+almlauf:
+  # Runden auf dem Hindernis-Rundkurs (1–5).
+  runden: 1
+  # Wer bis dahin nicht im Ziel ist, scheidet aus.
+  zeitlimit-sekunden: 240
+  # Schnelligkeit beim Laufen (0 = normal, 1 = wie Schnelligkeit I, höchstens 3).
+  tempo: 1
+
+bogen:
+  # Pfeile je Durchgang (drei Durchgänge: Scheibe in 20, 35 und 50 Blöcken).
+  pfeile: 5
+  # So viel Zeit hat man je Durchgang.
+  zeit-sekunden: 45
+  # Stärkster Wind (0 = immer windstill, 3 = kräftig). Je Durchgang weht er zufällig bis zu dieser Stärke.
+  wind: 2
+
+regatta:
+  # Partys rudern zu zweit in einem Boot (der Erste lenkt). Aus: jeder rudert allein.
+  zweier: true
+  # Zeitstrafe für jedes verpasste Bojen-Tor.
+  strafe-sekunden: 4
+  zeitlimit-sekunden: 150
+  # Stärke der Strömungen, die das Boot seitlich treiben (0 = keine, 3 = kräftig).
+  stroemung: 2
+
+seifenkiste:
+  zeitlimit-sekunden: 120
+  # Weiche: rechts in die Kehren oder geradeaus das Steilstück. Aus: alle fahren die Kehren.
+  weiche: true

@@ -1,0 +1,6 @@
+# Nur für Tests: tut so, als wäre es das Netzwerk-Plugin.
+name: MoinMorni
+version: test
+main: de.moinmorni.fake.FakeNetwork
+api-version: '1.21'
+description: Test-Ersatz für das MoinMorni-Netzwerk-Plugin (nicht für echte Server).
