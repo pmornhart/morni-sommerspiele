@@ -69,3 +69,16 @@ Jede Disziplin geht auch einzeln. Netzwerk-Kennung `sommerspiele`, englisch „S
   Schleichen wirft nicht heraus, Lore steht vor dem LOS, fährt bergab, Vollgas entgleist, Steilstück an der Weiche,
   Dora weg und wieder in ihrer Lore, Bert zu spät → verlassen), Siegerehrung mit Gesamtsieg, niemand „spielt“ mehr,
   zurück im Dorf, Spielerdatei, Bestenliste, `/top bogen`, Bett → `askToLobby`.
+- Bilder mit echtem Client 26.3 (über ViaVersion, nur lokal unter `/home/user/mm-cache/bilder-sommerspiele/`): Dorf von
+  oben, Maibaum, Biergarten, Kistenberg von unten, Starthäuser, Weiche mit Strohballen und Wegweiser, Bergsee mit
+  Zielbogen und Tribüne, Startsteg, Schießplatz, Almlauf von oben, Bach, Kuhweide.
+
+## Offen
+
+- Philip: Bilder ansehen, ausprobieren; Go für `main` mit 0.1.0.
+- Nicht echt geprüft: Strömung im echten Client (der Schub geht per `setVelocity` an ein Boot, das der Client selbst
+  steuert – ob der Client ihn übernimmt, ist nur im Test-Spieler-Ablauf ohne Rudern geprüft), Strudel mit einem echten
+  Boot, Fahrgefühl der Lore im echten Client (Teleport je Tick), echte Bogenschüsse auf 35/50 Blöcke mit Wind, Bedrock.
+- Bilder mitten im Rennen (nur Strecken ohne Spieler fotografiert), Live-Tafel am See steht etwas tief über dem Wasser.
+- Netzwerk-Repo: Eintrag in `DEFAULT_MODES`/`MODE_REPOS`/`MODE_JARS`, Lobby-Figur, Webseite, Einstellungs-Katalog
+  (`/sommerconfig`), Statistik-Namen; Lobby-Schild „Winterpause“ für `closed` (heute nur „Sommerpause“ bei Wintersport).
